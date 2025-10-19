@@ -35,7 +35,7 @@ export default function AdminPanel({
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 text-white max-h-28 overflow-y-auto z-50">
+    <div className="fixed bottom-0 left-0 bg-gray-800 border-t border-gray-700 text-white max-h-28 overflow-y-auto z-50 w-[60%] rounded-tr-lg shadow-lg">
       <div className="p-1">
         <div className="flex gap-0.5 mb-1 flex-wrap">
           <button
