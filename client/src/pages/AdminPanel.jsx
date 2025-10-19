@@ -35,9 +35,9 @@ export default function AdminPanel({
   };
 
   return (
-    <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 text-white max-h-40 overflow-y-auto z-50">
-      <div className="p-2">
-        <div className="flex gap-1 mb-2 flex-wrap">
+    <div className="fixed bottom-0 left-0 right-0 bg-gray-800 border-t border-gray-700 text-white max-h-28 overflow-y-auto z-50">
+      <div className="p-1">
+        <div className="flex gap-0.5 mb-1 flex-wrap">
           <button
             onClick={() => setActiveTab("participants")}
             className={`flex items-center gap-1 px-2 py-1 rounded text-xs transition-colors ${
