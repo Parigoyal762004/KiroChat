@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+body {
+  @apply min-h-screen bg-gradient-to-br from-[#6C63FF] to-[#00C9FF] 
+         text-white flex flex-col items-center justify-center;
+  font-family: "Inter", sans-serif;
+  
+}
+@layer base {
+  :root {
+    --cream: #f5f3f0;
+    --taupe: #8e7f7b;
+    --terracotta: #e07b5b;
+    --terracotta-dark: #d65c4e;
+  }
+}
+button {
+  @apply px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 
+         backdrop-blur-md transition-all;
+}

@@ -1,0 +1,14 @@
+<!-- simple-test.html -->
+<script src="https://cdn.socket.io/4.8.1/socket.io.min.js"></script>
+<script>
+  const socket = io("http://localhost:5000");
+  socket.on("connect", () => console.log("connected", socket.id));
+  socket.on("user-joined", (data) => console.log("user-joined:", data));
+  socket.on("chat-message", (msg) => console.log("chat:", msg));
+  // create a room
+  socket.emit("create-room", { roomId: "myroom" }, (res) => console.log("create-room ack", res));
+  // join
+  socket.emit("join-room", { roomId: "myroom", username: "Tester" }, (res) => console.log("join ack", res));
+  // send chat
+  socket.emit("chat-message", { roomId: "myroom", username: "Tester", text: "hello world" }, (ack) => console.log("chat ack", ack));
+</script>
