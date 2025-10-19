@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { Calendar, Clock, Users, Lock, Download, Trash2, Play } from "lucide-react";
 import React from 'react';
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = "https://kirochat.onrender.com";
 
 export default function MyMeetings() {
   const navigate = useNavigate();

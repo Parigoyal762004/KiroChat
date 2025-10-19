@@ -3,7 +3,7 @@ import io from "socket.io-client";
 import RecordingManager from "../utils/RecordingManager";
 import NotificationManager from "../utils/notificationManager";
 
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = "https://kirochat.onrender.com";
 
 export default function useWebRTC(roomId, username, options = {}) {
   const [peers, setPeers] = useState([]);

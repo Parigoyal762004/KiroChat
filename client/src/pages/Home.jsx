@@ -4,7 +4,7 @@ import io from "socket.io-client";
 import React from "react";
 import { Calendar, Lock, Settings, Plus, LogIn } from "lucide-react";
 
-const SERVER_URL = "http://localhost:5000";
+const SERVER_URL = "https://kirochat.onrender.com";
 
 export default function Home() {
   const [roomIdInput, setRoomIdInput] = useState("");
